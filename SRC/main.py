@@ -15,3 +15,4 @@ if txtFiles > 0:
 
 else:
     print("Input-Source is the commandline\n\t('TUMSpeak_InputFiles' - Folder has %d .txt Files", txtFiles)
+    textToBeConverted = input("Please input the Text, you would like to have converted to TUMSpeak\n\t>")
