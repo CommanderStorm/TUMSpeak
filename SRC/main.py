@@ -1,13 +1,17 @@
+import glob
+
 import SRC.processor as pro
 
+inputPath = ""
 
-def numberOfTXT_inInput() -> int:
-    return 0
+
+def number_of_txt_in_input() -> int:
+    return len(glob.glob1(inputPath, "*.tif"))
 
 
 # noinspection PyBroadException
 try:
-    txtFiles: int = numberOfTXT_inInput()
+    txtFiles: int = number_of_txt_in_input()
 except:
     print("something went wrong when trying to access the 'TUMSpeak_InputFiles' - Folder")
     txtFiles: int = 0
