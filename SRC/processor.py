@@ -1,3 +1,3 @@
 def process(text: str):
-    print("Processing:")
-    print(text)
+    text = text.upper().strip()
+    print("Processing:\n%s" % text)
