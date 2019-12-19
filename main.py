@@ -2,11 +2,10 @@ import glob
 
 import SRC.processor as pro
 
-inputPath = ""
-
+inputPath = "TUMSpeak_InputFiles"
 
 def number_of_txt_in_input() -> int:
-    return len(glob.glob1(inputPath, "*.tif"))
+    return len(glob.glob0(inputPath, "*.tif"))
 
 
 # noinspection PyBroadException
