@@ -14,12 +14,12 @@ except:
 
 if txtFiles > 0:
     print("Input-Source is the 'TUMSpeak_InputFiles' - Folder")
-    print("\t('TUMSpeak_InputFiles' - Folder has %d .txt Files" % txtFiles)
+    print("('TUMSpeak_InputFiles' - Folder has %d .txt Files)\n" % txtFiles)
     # for (i in filenames):
     #    pro.process(i)
 
 else:
     print("Input-Source is the commandline")
-    print("\t('TUMSpeak_InputFiles' - Folder has %d .txt Files" % txtFiles)
+    print("('TUMSpeak_InputFiles' - Folder has %d .txt Files)" % txtFiles)
     textToBeConverted = input("Please input the Text, you would like to have converted to TUMSpeak\n\t>")
     pro.process(textToBeConverted)

@@ -1,2 +1,3 @@
 def process(text: str):
-    print("Processing:\n %s" % text)
+    print("Processing:")
+    print(text)
