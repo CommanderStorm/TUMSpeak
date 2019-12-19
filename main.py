@@ -1,7 +1,7 @@
 import glob
 import os
 
-import SRC.processor as pro
+import processor as pro
 
 inputPath = os.path.dirname(__file__) + "/TUMSpeak_InputFiles"
 
