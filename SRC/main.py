@@ -1,3 +1,6 @@
+import SRC.processor as pro
+
+
 def numberOfTXT_inInput() -> int:
     return 0
 
@@ -12,7 +15,10 @@ except:
 if txtFiles > 0:
     print("Input-Source is the 'TUMSpeak_InputFiles' - Folder\n\t('TUMSpeak_InputFiles' - Folder has %d .txt Files",
           txtFiles)
+    # for (i in filenames):
+    #    pro.process(i)
 
 else:
     print("Input-Source is the commandline\n\t('TUMSpeak_InputFiles' - Folder has %d .txt Files", txtFiles)
     textToBeConverted = input("Please input the Text, you would like to have converted to TUMSpeak\n\t>")
+    pro.process(textToBeConverted)
