@@ -14,7 +14,7 @@ def generate_new_filepath() -> str:
     return path
 
 
-def processLine(i: str, xHeight: int, yHeight: int) -> str:
+def process_line(i: str, xHeight: int, yHeight: int) -> str:
     out = ""
     for character in i:
         out += Font.generate_svg_code(character, xHeight, yHeight)
@@ -27,8 +27,8 @@ def process(text: str):
     print("Processing:\n%s" % text)
     output_path = generate_new_filepath()
     with open(output_path, "w") as o:
-        xHeight, yHeight = 0, 0
+        x_height, y_height = 0, 0
         for i in text.split("\n"):
-            o.write(processLine(i, xHeight, yHeight))
-            xHeight = 0
-            yHeight += 200
+            o.write(process_line(i, x_height, y_height))
+            x_height = 0
+            y_height += 200
