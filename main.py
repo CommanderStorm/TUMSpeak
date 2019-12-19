@@ -1,8 +1,10 @@
 import glob
+import os
 
 import SRC.processor as pro
 
-inputPath = "TUMSpeak_InputFiles"
+inputPath = os.path.dirname(__file__) + "/TUMSpeak_InputFiles"
+
 
 def number_of_txt_in_input() -> int:
     return len(glob.glob1(inputPath, "*.txt"))
@@ -16,10 +18,17 @@ except:
     txtFiles: int = 0
 
 if txtFiles > 0:
-    print("Input-Source is the 'TUMSpeak_InputFiles' - Folder")
-    print("('TUMSpeak_InputFiles' - Folder has %d .txt Files)\n" % txtFiles)
-    # for (i in filenames):
-    #    pro.process(i)
+    print("\nInput-Source is the '%s' - Folder" % inputPath)
+    if txtFiles > 1:
+        print("('TUMSpeak_InputFiles' - Folder has %d .txt Files)" % txtFiles)
+    else:
+        print("('TUMSpeak_InputFiles' - Folder has 1 .txt File)")
+    filecounter = 1
+    for i in glob.glob1(inputPath, "*.txt"):
+        print("\n-----------------------------------------"
+              "\nFile #", filecounter)
+        filecounter += 1
+        pro.process(open(inputPath + "/" + i).read())
 
 else:
     print("Input-Source is the commandline")
