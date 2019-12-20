@@ -116,18 +116,16 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "L":
         return """
-            <g id="L" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="2569.42" y="1251.4" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="2569.42" y="2084.74" width="60" height="20" style="fill:#3070b3;"/>
-                </g> """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+"""
     if character == "M":
         return """
-            <g id="M" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="0" y="260" width="20" height="120" style="fill:#3070b3;"/>
-                    <path d="M10,260l0,20l864.188,0l0,-20l-864.188,0Z" style="fill:#3070b3;"/>
-                    <rect x="416.667" y="260" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="100" y="260" width="20" height="120" style="fill:#3070b3;"/>
-                </g> """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="50" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="100" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="120" height="20" style="fill:#3070b3;"/>
+"""
     if character == "N":
         return """
             <g id="N" transform="matrix(0.12,0,0,0.12,0,0)">
