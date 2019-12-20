@@ -7,23 +7,23 @@ characterWidth = {
     "F": 40,
     "G": 40,
     "H": 40,
-    "I": 40,
+    "I": 60,
     "J": 40,
     "K": 40,
     "L": 40,
     "M": 100,
     "N": 40,
-    "O": 100,
+    "O": 80,
     "P": 40,
-    "Q": 100,
+    "Q": 80,
     "R": 40,
     "S": 40,
-    "T": 60,
+    "T": 80,
     "U": 40,
-    "V": 40,
+    "V": 80,
     "W": 100,
     "X": 40,
-    "Y": 40,
+    "Y": 80,
     "Z": 40,
     ",": 40,
     ".": 40,
@@ -97,9 +97,9 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "I":
         return """
-            <rect x="10" y="0" width="40.5" height="20" style="fill:#3070b3;"/>
-            <rect x="20" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="25" y="0" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="30" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="80" height="20" style="fill:#3070b3;"/>
 """
     if character == "J":
         return """
@@ -128,134 +128,102 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "N":
         return """
-            <g id="N" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="1256.79" y="2505.12" width="20" height="120" style="fill:#3070b3;"/>
-                    <path d="M1423.45,2505.12l-153.595,64.703l406.323,935.297l153.595,-64.702l-406.323,-935.298Z"
-                          style="fill:#3070b3;"/>
-                    <rect x="1676.18" y="2505.12" width="20" height="120" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <path d="M20,0 L60,120 l-20,0 L0,0 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "O":
         return """
-            <g id="O" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M3018.74,360.14l-100,0l0,-120.14l100,0l0,120.14Zm-666.666,-833.469l0,666.802l60,0l0,-666.802l-60,0Z"
-                          style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="80" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="100" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="100" height="20" style="fill:#3070b3;"/>
+"""
     if character == "P":
         return """
-            <g id="P" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="3250.83" y="260" width="20" height="120" style="fill:#3070b3;"/>
-                    <path d="M3583.33,260l-204.375,0l0,20l121.042,0l10,10l0,10l-10,82.635l-121.042,0.699l0,166.666l204.375,0l20,-166.666l0,-250l-20,-20Z"
-                          style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <path d="M10,0 l30,0 l20,20 l0,30 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-10 l-10,-10 l-30,0 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "Q":
-        return """<g id="Q" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M100,4829.11l-100,0l0,-120.14l100,0l0,120.14Zm-666.666,-833.469l0,666.802l60,0l0,-666.802l-60,0Z"
-                          style="fill:#3070b3;"/>
-                    <path d="M563.768,4483.18l-112.782,112.782l377.153,377.154l112.783,-112.782l-377.154,-377.154Z"
-                          style="fill:#3070b3;"/>
-                </g> """
+        return """
+            <rect x="80" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="100" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="100" height="20" style="fill:#3070b3;"/>
+            <path d="M112.5,122.5 L102.5,132.5 L62.5,92.5 L72.5,83.5 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "R":
         return """
-            <g id="R" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M1224.94,4385.49l20,0l284.576,443.486l-166.666,0l-284.577,-443.486Z"
-                          style="fill:#3070b3;"/>
-                    <path d="M1496.87,3828.97l-219.882,0l0,20l130.226,0l89.656,10l0,83.334l-89.656,82.634l-130.226,0.699l0,20l219.882,0l179.312,-20l0,-250l-179.312,-20Z"
-                          style="fill:#3070b3;"/>
-                    <rect x="1138.47" y="3828.97" width="20" height="120" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <path d="M10,0 l30,0 l20,20 l0,30 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-10 l-10,-10 l-30,0 Z"
+                  style="fill:#3070b3;"/>
+            <path d="M0,60 L20,60 L60,120 l-20,0 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "S":
         return """
-            <g id="S" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="1833.33" y="4662.31" width="60" height="20" style="fill:#3070b3;"/>
-                    <rect x="1833.33" y="3831.53" width="60" height="20" style="fill:#3070b3;"/>
-                    <rect x="1835.88" y="3938.91" width="20" height="45" style="fill:#3070b3;"/>
-                    <rect x="1833.33" y="4245.3" width="60" height="20" style="fill:#3070b3;"/>
-                    <rect x="2166.67" y="4273.4" width="20" height="60" style="fill:#3070b3;"/>
-                </g>
-             """
+        <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+        <rect x="0" y="0" width="20" height="50" style="fill:#3070b3;"/>
+        <rect x="0" y="40" width="60" height="20" style="fill:#3070b3;"/>
+        <rect x="40" y="50" width="20" height="60" style="fill:#3070b3;"/>
+        <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+"""
     if character == "T":
         return """
-            <g id="T" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="2790.51" y="3827.17" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="2540.51" y="3827.17" width="80" height="20" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="100" height="20" style="fill:#3070b3;"/>
+"""
     if character == "U":
         return """
-            <g id="U" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="3750.83" y="3827.17" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="3417.5" y="3827.17" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="3417.5" y="4640.5" width="60" height="20" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+"""
     if character == "V":
         return """
-            <g id="V" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M810,5234.73l-166.715,0l-342.119,120l166.715,0l342.119,-120Z" style="fill:#3070b3;"/>
-                    <path d="M166.715,5234.73l-166.715,0l342.119,120l166.715,0l-342.119,-120Z" style="fill:#3070b3;"/>
-                </g>
-             """
+            <path d="M20,0 l-20,0 L40,120 l20,0 L100,0 l-20,0 L50,90 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "W":
         return """
-            <g id="W" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <g id="Ebene92">
-                        <path d="M1586.57,5234.73l-172.205,0l-196.437,120l172.204,0l196.438,-120Z" style="fill:#3070b3;"/>
-                        <path d="M1174.76,5234.73l-172.205,0l196.438,120l172.205,0l-196.438,-120Z" style="fill:#3070b3;"/>
-                    </g>
-                    <g id="Ebene93">
-                        <path d="M2002.55,5234.73l-172.204,0l-196.438,120l172.205,0l196.437,-120Z" style="fill:#3070b3;"/>
-                        <path d="M1590.74,5234.73l-172.204,0l196.437,120l172.205,0l-196.438,-120Z" style="fill:#3070b3;"/>
-                    </g>
-                </g>
-             """
+            <path d="M20,0 l-20,0 L20,120 l20,0 L70,0 l-20,0 L30,80 Z"
+                  style="fill:#3070b3;"/>
+            <path d="M70,0 l-20,0 L80,120 l20,0 L120,0 l-20,0 L90,80 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "X":
         return """
-            <g id="X" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M2240.72,5234.73l-157.392,0l328.696,120l157.391,0l-328.695,-120Z" style="fill:#3070b3;"/>
-                    <path d="M2583.33,5234.73l-157.391,0l-328.695,120l157.391,0l328.695,-120Z" style="fill:#3070b3;"/>
-                </g>
-             """
+            <path d="M0,0 l20,0 L60,120 l-20,0Z"
+                  style="fill:#3070b3;"/>
+            <path d="M0,120 l20,0 L60,0 l-20,0Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "Y":
         return """
-            <g id="Y" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M3489.58,5234.73l-20,0l-291.667,411.158l20,0l291.667,-411.158Z"
-                          style="fill:#3070b3;"/>
-                    <path d="M2739.58,5234.73l166.666,0l291.667,411.158l-20,0l-291.666,-411.158Z"
-                          style="fill:#3070b3;"/>
-                    <rect x="3031.25" y="5623.57" width="20" height="70" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="40" y="50" width="20" height="70" style="fill:#3070b3;"/>
+            <path d="M20,0 l-20,0 L40,60 l20,0 L100,0 l-20,0 L50,45 Z"
+                      style="fill:#3070b3;"/>
+"""
     if character == "Z":
         return """
-            <g id="Z" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <path d="M4069.53,5234.73l-499.999,-0.846l-0.282,166.666l499.999,0.847l0.282,-20Z"
-                          style="fill:#3070b3;"/>
-                    <path d="M4069.27,5401.33l-117.652,-118.051l-383.493,783.952l117.652,118.05l383.493,-783.951Z"
-                          style="fill:#3070b3;"/>
-                    <path d="M4068.12,4068.07l-499.999,-0.846l-0.282,166.666l499.999,0.847l0.282,-20Z"
-                          style="fill:#3070b3;"/>
-                </g>
-             """
+        <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+        <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+        <path d="M60,20 L20,100 l-10,10 L0,100 L40,20 l10,-10 Z"
+                      style="fill:#3070b3;"/>
+"""
     if character == ",":
         return """
-            <g id="," transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="553.502" y="7234.29" width="10" height="40" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="10" y="110" width="10" height="40" style="fill:#3070b3;"/>
+"""
     if character == ".":
         return """
-            <g id="." transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="252.616" y="7234.29" width="10" height="10" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="10" y="110" width="10" height="10" style="fill:#3070b3;"/>
+"""
     if character == "!":
         return """
-            <g id="!" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="937.783" y="6329.3" width="10" height="100" style="fill:#3070b3;"/>
-                    <rect x="937.783" y="7234.29" width="10" height="10" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="10" y="110" width="10" height="10" style="fill:#3070b3;"/>
+            <rect x="10" y="0" width="10" height="100" style="fill:#3070b3;"/>
+"""
