@@ -102,21 +102,18 @@ def generate_svg_code(character: str) -> str:
             <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
 """
     if character == "J":
-        return """<g id="J" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="1499.9" y="1254.99" width="20" height="10" style="fill:#3070b3;"/>
-                    <rect x="1166.67" y="2088.41" width="60" height="20" style="fill:#3070b3;"/>
-                    <path d="M1333.34,1838.46l-20,0l-0.001,416.666l166.666,0l0.002,-416.666Z" style="fill:#3070b3;"/>
-                    <rect x="1333.33" y="1255.12" width="40" height="20" style="fill:#3070b3;"/>
-                </g> """
+        return """
+            <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="80" width="20" height="40" style="fill:#3070b3;"/>
+"""
     if character == "K":
         return """
-            <g id="K" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="1889.33" y="1255.12" width="20" height="120" style="fill:#3070b3;"/>
-                    <path d="M2056,1626.06l-20,0l342.959,629.059l20,0l-342.959,-629.059Z" style="fill:#3070b3;"/>
-                    <path d="M2108.09,1754.18l-20,0l290.865,-499.058l20,0l-290.865,499.058Z"
-                          style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <path d="M0,60 L40,0 l20,0 L20,60 L60,120 l-20,0 Z"
+                  style="fill:#3070b3;"/>
+"""
     if character == "L":
         return """
             <g id="L" transform="matrix(0.12,0,0,0.12,0,0)">
