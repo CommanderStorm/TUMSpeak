@@ -97,7 +97,7 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "I":
         return """
-            <rect x="10" y="0" width="40" height="120" style="fill:#3070b3;"/>
+            <rect x="10" y="0" width="40.5" height="20" style="fill:#3070b3;"/>
             <rect x="20" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
 """
