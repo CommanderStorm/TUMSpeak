@@ -3,6 +3,7 @@ import os
 import time
 
 import Font
+import convert_svg_to_png as convert
 
 x_height = 0
 y_height = 0
@@ -50,3 +51,4 @@ def process(text: str):
     </g>
 </svg>
         """)
+    convert.rasterise(output_path)
