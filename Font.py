@@ -27,7 +27,8 @@ characterWidth = {
     "Z": 40,
     ",": 40,
     ".": 40,
-    "!": 40
+    "!": 40,
+    " ": 40
 }
 
 
@@ -38,7 +39,7 @@ def get_character_width(character: str) -> int:
 
 
 def generate_svg_code(character: str) -> str:
-    if not character in characterWidth:
+    if not character in characterWidth or character == " ":
         return "\n"
     if character == "A":
         return """
