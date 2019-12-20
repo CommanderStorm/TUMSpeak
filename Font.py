@@ -69,31 +69,25 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "E":
         return """
-            <g id="E" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="2685.42" y="5.123" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="2770.59" y="380.123" width="22,5" height="20" style="fill:#3070b3;"/>
-                    <rect x="2779.5" y="5.123" width="285.59" height="20" style="fill:#3070b3;"/>
-                    <rect x="2779.5" y="838.457" width="37,5" height="20" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="40" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+"""
     if character == "F":
         return """
-            <g id="F" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="3175.52" y="5.123" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="3240.69" y="380.123" width="22,5" height="20" style="fill:#3070b3;"/>
-                    <rect x="3269.61" y="5.123" width="285.59" height="20" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="40" width="30" height="20" style="fill:#3070b3;"/>
+"""
     if character == "G":
         return """
-            <g id="G" transform="matrix(0.12,0,0,0.12,0,0)">
-                    <rect x="3666.67" y="0" width="60" height="20" style="fill:#3070b3;"/>
-                    <rect x="3666.67" y="838.457" width="60" height="20" style="fill:#3070b3;"/>
-                    <rect x="3930" y="380.123" width="236.667" height="20" style="fill:#3070b3;"/>
-                    <rect x="3666.67" y="5.123" width="20" height="120" style="fill:#3070b3;"/>
-                    <rect x="4000" y="515.138" width="20" height="60" style="fill:#3070b3;"/>
-                </g>
-             """
+            <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="30" y="40" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="40" y="40" width="20" height="60" style="fill:#3070b3;"/>
+"""
     if character == "H":
         return """
             <g id="H" transform="matrix(0.12,0,0,0.12,0,0)">
