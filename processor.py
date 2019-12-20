@@ -7,12 +7,14 @@ import convert_svg_to_png as convert
 
 x_height = 0
 y_height = 0
+filename = ""
 
 
 def generate_new_filepath() -> str:
+    global filename
     time.sleep(1)
-    path = os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/SVG" + datetime.datetime.now().strftime(
-        "%d-%m-%Y  %Hh %Mm %Ss") + ".svg"
+    filename = datetime.datetime.now().strftime("%d-%m-%Y  %Hh %Mm %Ss")
+    path = os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/SVG" + filename + ".svg"
     print("Path: ", path)
     open(path, "x").close()
     return path
@@ -51,4 +53,4 @@ def process(text: str):
     </g>
 </svg>
         """)
-    convert.rasterise(output_path)
+    convert.rasterise(output_path, os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/PNG" + filename + ".png")
