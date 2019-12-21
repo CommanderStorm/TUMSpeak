@@ -32,6 +32,30 @@ def process_line(i: str) -> str:
     return out
 
 
+def is_one_liner_without_q(text: str) -> bool:
+    return False
+
+
+def get_max_y(text: str) -> int:
+    out = 0
+    if is_one_liner_without_q(text):
+        return 120
+    for i in text.split("\n"):
+        out += 140
+    return out
+
+
+def get_max_x(text: str) -> int:
+    out = 0
+    for i in text.split("\n"):
+        line_length = 0
+        for character in i:
+            line_length += Font.get_character_width(character)
+        if line_length > out:
+            out = line_length
+    return out
+
+
 def process(text: str):
     global x_height, y_height
     text = text.upper().strip()
@@ -40,17 +64,16 @@ def process(text: str):
     with open(output_path, "w") as o:
         o.write("""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 600 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<svg width="100%" height="100%""" + """" viewBox="0 0 %d %d" version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g>
-""")
+""" % (get_max_x(text), get_max_y(text)))
         for i in text.split("\n"):
             o.write(process_line(i))
             x_height = 0
-            y_height += 200
-            o.write("""
+            y_height += 140
+        o.write("""
     </g>
-</svg>
-        """)
+</svg>""")
     convert.rasterise(output_path, os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/PNG/" + filename + ".png")
