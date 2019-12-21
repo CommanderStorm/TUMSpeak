@@ -53,9 +53,9 @@ def get_max_y(text: str) -> int:
 
 
 def get_max_x(text: str) -> int:
-    out = 0
+    out = 20
     for i in text.split("\n"):
-        line_length = 0
+        line_length = 20
         for character in i:
             line_length += Font.get_character_width(character)
         if line_length > out:
