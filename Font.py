@@ -46,14 +46,14 @@ def generate_svg_code(character: str) -> str:
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="10" y="0" width="40" height="20" style="fill:#3070b3;"/>
-            <rect x="10" y="40" width="40" height="20" style="fill:#3070b3;"/>
+            <rect x="10" y="45" width="40" height="20" style="fill:#3070b3;"/>
 """
     if character == "B":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="10" y="0" width="40" height="20" style="fill:#3070b3;"/>
-            <rect x="10" y="40" width="40" height="20" style="fill:#3070b3;"/>
+            <rect x="10" y="45" width="40" height="20" style="fill:#3070b3;"/>
             <rect x="10" y="100" width="40" height="20" style="fill:#3070b3;"/>
 """
     if character == "C":
@@ -72,28 +72,28 @@ def generate_svg_code(character: str) -> str:
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
-            <rect x="0" y="40" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="45" width="30" height="20" style="fill:#3070b3;"/>
             <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
 """
     if character == "F":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
-            <rect x="0" y="40" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="45" width="30" height="20" style="fill:#3070b3;"/>
 """
     if character == "G":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
-            <rect x="30" y="40" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="30" y="45" width="30" height="20" style="fill:#3070b3;"/>
             <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
-            <rect x="40" y="40" width="20" height="60" style="fill:#3070b3;"/>
+            <rect x="40" y="45" width="20" height="65" style="fill:#3070b3;"/>
 """
     if character == "H":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <rect x="0" y="40" width="60" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="45" width="60" height="20" style="fill:#3070b3;"/>
 """
     if character == "I":
         return """
@@ -143,7 +143,7 @@ def generate_svg_code(character: str) -> str:
     if character == "P":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <path d="M10,0 l30,0 l20,20 l0,30 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-10 l-10,-10 l-30,0 Z"
+            <path d="M10,0 l30,0 l20,20 l0,25 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-5 l-10,-10 l-30,0 Z"
                   style="fill:#3070b3;"/>
 """
     if character == "Q":
@@ -158,7 +158,7 @@ def generate_svg_code(character: str) -> str:
     if character == "R":
         return """
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <path d="M10,0 l30,0 l20,20 l0,30 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-10 l-10,-10 l-30,0 Z"
+            <path d="M10,0 l30,0 l20,20 l0,25 l-20,20 l-30,0 l0,-20 l20,0 l10,-10 l0,-5 l-10,-10 l-30,0 Z"
                   style="fill:#3070b3;"/>
             <path d="M0,60 L20,60 L60,120 l-20,0 Z"
                   style="fill:#3070b3;"/>
@@ -167,7 +167,7 @@ def generate_svg_code(character: str) -> str:
         return """
         <rect x="0" y="0" width="60" height="20" style="fill:#3070b3;"/>
         <rect x="0" y="0" width="20" height="50" style="fill:#3070b3;"/>
-        <rect x="0" y="40" width="60" height="20" style="fill:#3070b3;"/>
+        <rect x="0" y="45" width="60" height="20" style="fill:#3070b3;"/>
         <rect x="40" y="50" width="20" height="60" style="fill:#3070b3;"/>
         <rect x="0" y="100" width="60" height="20" style="fill:#3070b3;"/>
 """
@@ -203,7 +203,7 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "Y":
         return """
-            <rect x="40" y="50" width="20" height="70" style="fill:#3070b3;"/>
+            <rect x="40" y="45" width="20" height="75" style="fill:#3070b3;"/>
             <path d="M20,0 l-20,0 L40,60 l20,0 L100,0 l-20,0 L50,45 Z"
                       style="fill:#3070b3;"/>
 """
