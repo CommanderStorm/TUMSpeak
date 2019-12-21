@@ -26,9 +26,6 @@ CONVERTING SVG at   %s
         with wand.color.Color('transparent') as background_color:
             library.MagickSetBackgroundColor(image.wand,
                                              background_color.resource)
-            image.read()
-
-        png_image = image.make_blob("png32")
-
-    with open(target, "wb") as out:
-        out.write(png_image)
+            png_image = image.make_blob("png32")
+            with open(target, "wb") as out:
+                out.write(png_image)
