@@ -18,7 +18,7 @@ characterWidth = {
     "Q": 80,
     "R": 40,
     "S": 40,
-    "T": 80,
+    "T": 60,
     "U": 40,
     "V": 80,
     "W": 100,
@@ -177,8 +177,8 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "T":
         return """
-            <rect x="40" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <rect x="0" y="0" width="100" height="20" style="fill:#3070b3;"/>
+            <rect x="20" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="-1" y="0" width="62" height="20" style="fill:#3070b3;"/>
 """
     if character == "U":
         return """
