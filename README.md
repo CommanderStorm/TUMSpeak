@@ -1,10 +1,10 @@
 # TUMSpeak
 This is a very short converter frrom Text to TUMSpeak - A SVG-Based Font in the TUM-Logo Layout
 
-##Samples
+## Samples
 
-##Usage:
-###Generating SVG's
+## Usage:
+### Generating SVG's
 __generating SVGs is eazy__, but there are two notable ways of interfacing with this Project:
 - *"I want to convert a `.txt`-File"*
   - Just Put the File you want to convert in the `TUMSpeak_InputFiles`-Folder
@@ -17,7 +17,7 @@ If an __Error message__ appears and you __DON'T want a `.png`-File__, everything
 
 The Results of the conversion will appear in the `TUMSpeak_OutputFiles/SVG/`-Folder
 
-###Generating PNG's
+### Generating PNG's
 __generating PNGs is not that hard__, but you need to follow this guide:\
 Converting an SVGs is something I am not that familiar with.
 This is why I got some help by the __*[Wand package](http://docs.wand-py.org/en/0.4.1/index.html)*__.
