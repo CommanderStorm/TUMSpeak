@@ -25,10 +25,14 @@ characterWidth = {
     "X": 40,
     "Y": 80,
     "Z": 40,
-    ",": 40,
-    ".": 40,
-    "!": 40,
-    " ": 40
+    ",": 50,
+    ".": 50,
+    "!": 50,
+    " ": 50,
+    "Ä": 80,
+    "Ö": 80,
+    "Ü": 80,
+    "ß": 80
 }
 
 
@@ -216,14 +220,22 @@ def generate_svg_code(character: str) -> str:
 """
     if character == ",":
         return """
-            <rect x="10" y="110" width="10" height="40" style="fill:#3070b3;"/>
+            <rect x="30" y="110" width="10" height="40" style="fill:#3070b3;"/>
 """
     if character == ".":
         return """
-            <rect x="10" y="110" width="10" height="10" style="fill:#3070b3;"/>
+            <rect x="30" y="110" width="10" height="10" style="fill:#3070b3;"/>
 """
     if character == "!":
         return """
-            <rect x="10" y="110" width="10" height="10" style="fill:#3070b3;"/>
-            <rect x="10" y="0" width="10" height="100" style="fill:#3070b3;"/>
+            <rect x="30" y="110" width="10" height="10" style="fill:#3070b3;"/>
+            <rect x="30" y="0" width="10" height="100" style="fill:#3070b3;"/>
 """
+    if character == "Ä":
+        return generate_svg_code("A") + generate_svg_code("E")
+    if character == "Ö":
+        return generate_svg_code("O") + generate_svg_code("E")
+    if character == "Ü":
+        return generate_svg_code("U") + generate_svg_code("E")
+    if character == "ß":
+        return generate_svg_code("S") + generate_svg_code("S")
