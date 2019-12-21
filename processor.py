@@ -13,8 +13,8 @@ filename = ""
 def generate_new_filepath() -> str:
     global filename
     time.sleep(1)
-    filename = datetime.datetime.now().strftime("%d-%m-%Y  %Hh %Mm %Ss")
-    path = os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/SVG" + filename + ".svg"
+    filename = "TUMSpeak" + datetime.datetime.now().strftime("%d-%m-%Y  %Hh %Mm %Ss")
+    path = os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/SVG/" + filename + ".svg"
     print("Path: ", path)
     open(path, "x").close()
     return path
@@ -40,7 +40,7 @@ def process(text: str):
     with open(output_path, "w") as o:
         o.write("""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 2000 200" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<svg width="100%" height="100%" viewBox="0 0 600 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g>
