@@ -101,9 +101,9 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "I":
         return """
-            <rect x="25" y="0" width="30" height="20" style="fill:#3070b3;"/>
-            <rect x="30" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <rect x="0" y="100" width="80" height="20" style="fill:#3070b3;"/>
+            <rect x="15" y="0" width="30" height="20" style="fill:#3070b3;"/>
+            <rect x="20" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="-1" y="100" width="62" height="20" style="fill:#3070b3;"/>
 """
     if character == "J":
         return """
