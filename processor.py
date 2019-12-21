@@ -68,6 +68,8 @@ def process(text: str):
     text = text.upper().strip()
     print("Processing:\n%s" % text)
     output_path = generate_new_filepath()
+    x_height = 0
+    y_height = 0
     with open(output_path, "w") as o:
         o.write("""<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
