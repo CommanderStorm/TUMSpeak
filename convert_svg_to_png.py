@@ -19,12 +19,14 @@ CONVERTING SVG at   %s
                      Y   _/  _\ 
         to PNG at   %s
     """ % (source, target))
-    with wand.image.Image() as image:
+
+    with open(source, "r")as f:
+        sourceFile = f.read().encode('utf-8')
+    with wand.image.Image(blob=sourceFile, format="svg") as image:
         with wand.color.Color('transparent') as background_color:
             library.MagickSetBackgroundColor(image.wand,
                                              background_color.resource)
-        with open(source, "r")as sourceFile:
-            image.read(blob=sourceFile.read(), format="svg")
+            image.read()
 
         png_image = image.make_blob("png32")
 
