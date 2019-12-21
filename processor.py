@@ -53,4 +53,4 @@ def process(text: str):
     </g>
 </svg>
         """)
-    convert.rasterise(output_path, os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/PNG" + filename + ".png")
+    convert.rasterise(output_path, os.path.dirname(__file__) + "/TUMSpeak_OutputFiles/PNG/" + filename + ".png")
