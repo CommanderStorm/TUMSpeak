@@ -33,7 +33,14 @@ def process_line(i: str) -> str:
 
 
 def is_one_liner_without_q(text: str) -> bool:
-    return False
+    first_line = True
+    for i in text.split("\n"):
+        if not first_line:
+            return False
+        for c in i:
+            if c in ["Q", ","]:
+                return False
+    return True
 
 
 def get_max_y(text: str) -> int:
