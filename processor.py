@@ -24,10 +24,10 @@ def process_line(i: str) -> str:
     global x_height
     out = ""
     for character in i:
-        out += """\n       <g  transform="matrix(1,0,0,1,%d,%d)">\n""" % (x_height, y_height)
+        out += """\n       <g  transform="matrix(1,0,0,1,%d,%d)">""" % (x_height, y_height)
         out += Font.generate_svg_code(character)
 
-        out += "\n       </g>\n"
+        out += "       </g>\n"
         x_height += Font.get_character_width(character)
     return out
 
