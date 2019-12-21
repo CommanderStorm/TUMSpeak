@@ -13,7 +13,7 @@ characterWidth = {
     "L": 40,
     "M": 100,
     "N": 40,
-    "O": 80,
+    "O": 60,
     "P": 40,
     "Q": 80,
     "R": 40,
@@ -139,10 +139,10 @@ def generate_svg_code(character: str) -> str:
 """
     if character == "O":
         return """
-            <rect x="80" y="0" width="20" height="120" style="fill:#3070b3;"/>
+            <rect x="60" y="0" width="20" height="120" style="fill:#3070b3;"/>
             <rect x="0" y="0" width="20" height="120" style="fill:#3070b3;"/>
-            <rect x="0" y="100" width="100" height="20" style="fill:#3070b3;"/>
-            <rect x="0" y="0" width="100" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="100" width="80" height="20" style="fill:#3070b3;"/>
+            <rect x="0" y="0" width="80" height="20" style="fill:#3070b3;"/>
 """
     if character == "P":
         return """
